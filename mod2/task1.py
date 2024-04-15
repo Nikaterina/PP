@@ -9,7 +9,7 @@ def get_summary_rss(str_way):
         rss = 0
         for i in f.readlines()[1:]:
             rss += int(i.split()[5])
-        return round(rss / 1048576, 1)
+        return f"{round(rss / 1048576, 1)} MiB"
 
 
 def main():
