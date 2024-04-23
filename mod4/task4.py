@@ -11,7 +11,7 @@ uptime_ = ''.join(a)
 
 
 @app.route("/uptime", methods=['GET'])
-def uptime():
+def uptime() -> str:
     UPTIME = uptime_
     return f"Current uptime is {UPTIME}"
 
